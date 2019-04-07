@@ -7,14 +7,17 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0",
+    "react-meta-tags": "^0.7.4",
     "react-scripts": "2.1.8"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dev": "next"
+    "dev": "node server.js",
+    "build": "./node_modules/next/dist/bin/next build",
+    "heroku-postbuild": "./node_modules/next/dist/bin/next build"
   },
   "eslintConfig": {
     "extends": "react-app"
